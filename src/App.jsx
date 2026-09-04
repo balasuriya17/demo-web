@@ -9,6 +9,8 @@ import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
+  const path = window.location.pathname.replace("/demo-web", "") || "/";
+
   const pages = {
     "/": <Home />,
     "/plans": <Plans />,
@@ -22,7 +24,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {pages[window.location.pathname] || <Home />}
+      {pages[path] || <Home />}
       <Footer />
     </>
   );
