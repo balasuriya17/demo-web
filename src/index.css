@@ -2142,3 +2142,16 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     grid-row: 2;
   }
 }
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+#root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li {
+  color: #000000 !important;
+}
