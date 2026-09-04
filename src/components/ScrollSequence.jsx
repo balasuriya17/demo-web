@@ -17,9 +17,9 @@ function ScrollSequence({ frameCount, children }) {
       const img = new Image();
 
       const frameNumber = String(i).padStart(4, "0");
-
-      img.src = `/Frames/frame-${frameNumber}.png`;
-
+      
+      img.src = `${import.meta.env.BASE_URL}Frames/frame-${frameNumber}.png`;
+      
       img.onload = () => {
         loaded++;
 
