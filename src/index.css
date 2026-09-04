@@ -2085,7 +2085,19 @@ button {
   .plan-row {
     grid-template-columns: 1fr 42px;
   }
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
 
+#root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li {
+  color: #000000 !important;
+}
   .plan-row .plan-bar {
     grid-column: 1 / -1;
     grid-row: 2;
