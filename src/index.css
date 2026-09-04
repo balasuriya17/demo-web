@@ -2094,7 +2094,46 @@ body {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
+/* HOME PAGE FIX */
+body {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
 
+#root {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.home-page {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.home-page .scroll-sequence,
+.home-page .machine-section,
+.home-page .why-section,
+.home-page .facilities-section,
+.home-page .plans-section,
+.home-page .cta-section {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page p,
+.home-page span {
+  color: #000000 !important;
+}
+
+.home-page .facility-grid div,
+.home-page .plan {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000;
+}
 h1, h2, h3, h4, h5, h6, p, span, li {
   color: #000000 !important;
 }
