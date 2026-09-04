@@ -182,3 +182,48 @@
     border-right-color: var(--border);
   }
 }
+/* ===== HOME PAGE: BLACK TEXT + FRAMES ===== */
+
+body {
+  color: #000000;
+  background: #ffffff;
+}
+
+#root {
+  color: #000000;
+}
+
+/* Make headings and normal text black */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+label {
+  color: #000000;
+}
+
+/* Frames around common sections/cards */
+section,
+.card,
+[class*="card"],
+[class*="section"],
+[class*="box"] {
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+
+/* Buttons */
+button {
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* Links */
+a {
+  color: #000000;
+}
