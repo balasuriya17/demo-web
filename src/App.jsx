@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -9,7 +11,24 @@ import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
-  const path = window.location.hash.replace("#", "") || "/";
+  const getPath = () => {
+    return window.location.hash.replace("#", "") || "/";
+  };
+
+  const [path, setPath] = useState(getPath());
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setPath(getPath());
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   const pages = {
     "/": <Home />,
